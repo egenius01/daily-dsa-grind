@@ -2,6 +2,10 @@
 
 ## Day 1
 
+### Problem-217 Contains Duplicate
+
+<img src="BIG(0)_NOTATION_CHART.png" alt="alt text" width="20%" />
+
 1. **What did I learn today?**
    - I learnt about Big (O) Notation and how to calculate it.
    - I also learnt that using set over list to solving this problem was more efficient
