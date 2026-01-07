@@ -48,3 +48,65 @@
 - Remove gym field from Profile.
 - Remove user_type from User (move it to the relation).
 - Create Membership model: User + Gym + Role + Expiration.
+
+
+## Day 3
+
+## Problem-xxx Two Sum 
+
+1. 1. **What did I learn today?**
+   - Refactored to use enumerate() for cleaner syntax and hit 0ms runtime beating 100% of leetcoders.
+   - I leant not to use nested for loops for tasks like this because its complexity is O(n squared) which is very bad and inneficient.
+   - I also learnt to use enumerate instead of range(len(nums)) which is fine but slower than inbuilt enumerate.
+   -  I learnt to use the dictionary/hashmaps(notebook) method to store data and use as a checker or pointer to confirm instead of using nested for loops which is what ussually comes to mind first an is bad.
+2. **Where did I struggle?**
+   - I went ahead to use for loops which is inefficient and struggled to understand the dictionary/hashmaps(notebook) method.
+
+3. **What was the pattern?**
+   - Hash Maps / Dictionary
+
+4.  **Big (O) Notation**
+    - Time Complexity: O(n) (Iterating through the string).
+    - Space Complexity: O(n) - Because the dictionary only gets values store to it n times.
+
+# Day 4 - WASTED
+
+# Day 4 (Recovery)
+
+## Problem- 49 Group Anagrams
+
+1. **What did I learn today?**
+   - I learnt to use default dict from collections to create a dictionary and add lists as values instead of manually checking if a key exists
+   - I learnt that sorting itself is k log k where k is the length of the string, so it would only be slow if the lenght of the strings are really large
+   - I also learnt that i shoulnt drink alcohol aa ay before i have something important to do, it slows me down
+2. **Where did I struggle?**
+   - i struggled in implementing the algorithm i had in mind
+   - i couldnt think about default dict even if i knew about it previously, i was coding like a junior dev
+   - i also struggled with the logic of the problem
+   - I took too mich time solving the problem >20 minutes
+
+3. **What was the pattern?**
+   - Hash Maps / Dictionary (DEFAULT DICT)
+
+4.  **Big (O) Notation**
+    - Time Complexity: O(n•k log k) (Iterating through the string).
+      - n is the number of strings
+      - k is the length of the strings(k is sorting each word)
+      - this is efficient enough unless the interview has large or massive string lenghts
+      - if the strings are really long, we can use a counter to count the frequency of each character in the string and compare them (New Knowledge)
+    - Space Complexity: O(n•k) - to store the map.
+
+# Day 5(catch up)
+## Problem-347 Top K Frequent Elements
+
+1. **What did I learn today?**
+   - `Counter.items()` unpacks keys/values efficiently.
+   - `range(len(nums) + 1)` is needed for 0-based indexing.
+   - Technique: Used a Frequency Array where Index = Count.
+2. **Where did I struggle?**
+   - I struggled with the logic and spent 60 minutes on the task.
+3. **What was the pattern?**
+   - Bucket Sort + Hash Map
+4. **Big (O) Notation**
+   - Time Complexity: $O(n)$ (Better than Sorting).
+   - Space Complexity: $O(n)$
