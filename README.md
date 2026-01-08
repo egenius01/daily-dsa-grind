@@ -110,3 +110,19 @@
 4. **Big (O) Notation**
    - Time Complexity: $O(n)$ (Better than Sorting).
    - Space Complexity: $O(n)$
+
+# Day 6
+## Problem- 238. Product of Array Except Self
+
+1. **What did I learn today?**
+   - I learnt to use prefix and suffix to solve this problem
+   - I learnt to write out the algorithm in plain english/Diagram it out before coding
+   - Do not divide. Calculate "Left Product" then multiply by "Right Product."
+   
+2. **Where did I struggle?**
+   - **1 hour manual visualization:** I struggled with the logic and spent over 60 minutes on the task, good thing is i know better now and i used neet code to understand visually and learn to draw shit out first...
+3. **What was the pattern?**
+   - Prefix and Suffix
+4. **Big (O) Notation**
+   - Time Complexity: O(n)
+   - Space Complexity: O(n)
