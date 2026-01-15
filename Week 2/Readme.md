@@ -31,3 +31,15 @@
 - **Fix:** Updated `GymViewSet` to allow regular users to see the gym marketplace.
 
 
+## Day 11: The Container (Container With Most Water)
+
+### DSA (Two Pointers)
+- **Problem:** Container With Most Water (LeetCode 11)
+- **Strategy:** Start with the widest possible container (`l=0`, `r=n-1`).
+- **Key Insight:** The area is limited by the shorter wall. To find a potentially larger area, you must move the shorter wall inward, hoping to find a taller one.
+- **Time Complexity:** $O(n)$
+
+
+
+
+
