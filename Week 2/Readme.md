@@ -31,13 +31,36 @@
 - **Fix:** Updated `GymViewSet` to allow regular users to see the gym marketplace.
 
 
-## Day 11: The Container (Container With Most Water)
+---
 
-### DSA (Two Pointers)
+## Day 11: The "Privacy Wall" (Multi-Tenancy)
+
+### DSA (Two Pointers - Optimization)
 - **Problem:** Container With Most Water (LeetCode 11)
-- **Strategy:** Start with the widest possible container (`l=0`, `r=n-1`).
-- **Key Insight:** The area is limited by the shorter wall. To find a potentially larger area, you must move the shorter wall inward, hoping to find a taller one.
-- **Time Complexity:** $O(n)$
+- **Strategy:** Start wide ($L=0, R=end$) to maximize width. Move the shorter pointer inward at every step because height is the bottleneck.
+- **Result:** Solved in $O(n)$ time.
+
+### System Design (Data Isolation)
+- **Concept:** SaaS Multi-Tenancy at the API layer.
+- **Implementation:** Overrode `get_queryset` in `MembershipViewSet`.
+- **Logic:**
+    - **Superusers:** See all rows ("God Mode").
+    - **Gym Owners:** See memberships for their gyms only (using `gym__owner` lookup).
+    - **Regular Members:** See only their own receipts.
+
+---
+
+## Day 12: The Window & The Guard (Permissions)
+
+### DSA (Sliding Window Basics)
+- **Problem:** Best Time to Buy and Sell Stock (LeetCode 121)
+- **Strategy:** Single Pass (Greedy). Maintained a `min_price` (Left Pointer) and calculated potential profit at every step (Right Pointer).
+- **Key Insight:** "Buy Low" is just updating the minimum variable; "Sell High" is checking the difference.
+
+### Backend Engineering (Hybrid Permissions)
+- **Feature:** Public "Marketplace" API for Membership Plans.
+- **Solution:** Implemented Custom Permission `IsGymOwnerOrReadOnly`.
+- **Architecture:** Learned the difference between `has_permission` (The Doorman - View Level) vs. `has_object_permission` (The VIP Guard - Row Level).
 
 
 
