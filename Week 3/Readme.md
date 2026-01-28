@@ -62,13 +62,6 @@
 - **Solution:** Implemented Custom Permission `IsGymOwnerOrReadOnly`.
 - **Architecture:** Learned the difference between `has_permission` (The Doorman - View Level) vs. `has_object_permission` (The VIP Guard - Row Level).
 
----
-
-## Days 13-15: The Malaria Gap
-- **Status:** Streak paused.
-- **Note:** Missed a few days due to malaria. Recovery took priority to ensure a strong return.
-
----
 
 
 
